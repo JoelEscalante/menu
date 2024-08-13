@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>Hola probando lo que es el while</center></h1>
+    <script>
+        //pediremos que el usuario ingrese su edad, si es menor a 18 años, saldra un mensaje diciendo espera a crecer niño
+        edad= new Array(2)//aqui guardaremos 3 edades
+        x=0; //es el indice
+        while(x<2)
+    {
+        edad[x]=parseFloat(prompt("Bienvenido a mamitas puebla\n Para entrar debes dime  tu edad")) //el usuario ingresa su edad
+        if(edad[x]<18)
+    {
+        alert("Debes ser mayor de edad")
+        continue;
+    }
+        x++; //incremento en 1, de 0 hasta llegar a 2
+    }
+
+    document.write("Edades ingresadas son "+edad) //aqui saldran las 3 edades ingresadas
+
+    </script>
+</body>
+</html>l

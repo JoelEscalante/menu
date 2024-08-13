@@ -1,0 +1,16 @@
+Lunes 8 de julio de 2024
+
+podemos trabajar de manera interna y externa el JS 
+
+<script src =" lo mandas a llamar"> </script>
+
+ocuparemos el "document.write" para mostrar un mensaje en pantalla
+document.write("hola mundo");
+
+Tipos de datos
+Var- declarar una variable
+una variable es un espacio en memoria
+promt es un cuadro de dialogo, solicitar datos
+podemos imprimir con document.write y alert
+
+UTF-8 un formato de codificación único que usa símbolos de longitud variable

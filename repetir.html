@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajando con vectores no inicializados</title>
+</head>
+<body style="background-color: grey;">
+    <h1><center>Aprendiendo hacer arreglos en while</center></h1>
+    <script>
+        var salario=new Array(5);
+        var aumento=new Array(5);
+        var aumento1=new Array(5);
+        var x=0;//inicializando 
+        while(x<salario.length)//comprobando
+        {
+            salario[x]=parseFloat(prompt("Ingrese un salario mayor a 365")); 
+            if(salario[x] <=365)
+        {
+            alert("ingrese el salario de nuevo")
+            continue; //salta al inicio del bucle while y solicita otro salario
+        }
+            //si el salario ingresado es mayor a 365 continua el proceso
+            aumento[x]=salario[x]*1.20;
+            aumento1[x]=salario[x]*1.35; 
+            x++;//fin actualizado  
+
+
+        }//fin while
+
+        //mostrando el contenido de los arreglos
+        var j=0;//inicializar
+        //encabezado
+        document.write("__________________________________________________________________<br>");
+        document.write("<br>")
+        document.write("SALARIO---------------- AUMENTO 20% ----------------- AUMENTO 35% <br>");
+        document.write("__________________________________________________________________<br>");
+        while(j<salario.length)//comprobando
+        {
+        document.write(salario[j]+  " ---------------------------"  +aumento[j].toFixed(2)+  " ---------------------------"+aumento1[j].toFixed(2))+ "<br>"
+        document.write("<br>")
+        document.write("<br>")
+        j++;
+        }
+    </script>
+</body>
+</html>
